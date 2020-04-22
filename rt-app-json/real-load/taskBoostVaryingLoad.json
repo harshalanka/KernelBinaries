@@ -1,0 +1,29 @@
+{
+	"tasks" : {
+		"T0" : {
+			"instance" : 1,
+			"loop" : 1,
+			"phases" : {
+				"100p" : {
+					"loop" : 150,
+					"exec_time" : 20000
+				},
+				"10p" : {
+					"loop" : 200,
+					"exec_time" : 2000,
+					"sleep" : 18000
+				}
+			}
+		}
+	},
+	"global" : {
+		"duration" : -1,
+		"calibration" : 300,
+		"default_policy" : "SCHED_OTHER",
+		"pi_enabled" : false,
+		"lock_pages" : false,
+		"logdir" : "/data/local/tmp/",
+		"ftrace" : true,
+		"gnuplot" : false
+	}
+}

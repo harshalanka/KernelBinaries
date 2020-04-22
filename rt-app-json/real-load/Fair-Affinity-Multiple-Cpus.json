@@ -1,0 +1,19 @@
+{
+	"tasks" : {
+		"Dummyload" : {
+		"instance" : 1,
+		"cpus" : [0],
+		"run" : 500000
+		}
+	},
+	"global" : {
+		"duration" : -1,
+		"default_policy" : "SCHED_OTHER",
+		"calibration" : 300,
+		"pi_enabled" : false,
+		"lock_pages" : false,
+		"logdir" : "/data/local/tmp/",
+		"ftrace" : false,
+		"gnuplot" : false
+	}
+}

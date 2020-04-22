@@ -1,0 +1,31 @@
+{
+    "tasks": {
+        "Dummy": {
+            "loop": 1,
+            "phases": {
+                "D0": {
+                    "cpus": [
+                        "6"
+                    ],
+                    "loop": 1,
+                    "exec_time": 500000
+                }
+            }
+        },
+        "T0": {
+            "loop": 1,
+            "cpus": [],
+            "run": 1000000
+        }
+    },
+    "global": {
+        "duration": -1,
+        "default_policy": "SCHED_OTHER",
+        "calibration": 300,
+        "pi_enabled": false,
+        "lock_pages": false,
+        "ftrace": false,
+        "logdir": "/data/local/tmp/",
+        "gnuplot": false
+    }
+}

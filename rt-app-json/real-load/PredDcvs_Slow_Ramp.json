@@ -1,0 +1,36 @@
+{
+	"tasks" : {
+		"Pred-slowramp" : {
+			"instance" : 1,
+			"loop" : 1,
+			"cpus" : [7],
+			"phases" : {
+				"Spike" : {
+					"loop" : 100,
+					"exec_time" : 2000,
+					"sleep" : 18000
+				},
+				"Dormant" : {
+					"loop" : 1,
+					"sleep" : 300000
+				},
+				"slowramp" : {
+					"loop" : 30,
+					"exec_time" : 17000,
+					"sleep" : 3000
+				}
+			}
+		}
+	},
+	"global" : {
+		"duration" : -1,
+		"calibration" : 300,
+		"default_policy" : "SCHED_OTHER",
+		"pi_enabled" : false,
+		"lock_pages" : false,
+		"logdir" : "/data/local/tmp/",
+		"log_basename" : "rt-app2",
+		"ftrace" : false,
+		"gnuplot" : false
+	}
+}

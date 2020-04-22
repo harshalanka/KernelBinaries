@@ -1,0 +1,70 @@
+{
+	"tasks" : {
+		"10p-100p" : {
+			"instance" : 1,
+			"loop" : 1,
+			"cpus" : [7],
+			"phases" : {
+				"10p" : {
+					"loop" : 200,
+					"exec_time" : 2000,
+					"sleep" : 18000
+				},
+				"20p" : {
+					"loop" : 200,
+					"exec_time" : 4000,
+					"sleep" : 16000
+				},
+				"30p" : {
+					"loop" : 200,
+					"exec_time" : 6000,
+					"sleep" : 14000
+				},
+				"40p" : {
+					"loop" : 200,
+					"exec_time" : 8000,
+					"sleep" : 12000
+				},
+				"50p" : {
+					"loop" : 200,
+					"exec_time" : 10000,
+					"sleep" : 10000
+				},
+				"60p" : {
+					"loop" : 200,
+					"exec_time" : 12000,
+					"sleep" : 8000
+				},
+				"70p" : {
+					"loop" : 200,
+					"exec_time" : 14000,
+					"sleep" : 6000
+				},
+				"80p" : {
+					"loop" : 200,
+					"exec_time" : 16000,
+					"sleep" : 4000
+				},
+				"90p" : {
+					"loop" : 200,
+					"exec_time" : 18000,
+					"sleep" : 2000
+				},
+				"100p" : {
+					"loop" : 200,
+					"exec_time" : 20000
+				}
+			}
+		}
+	},
+	"global" : {
+		"duration" : -1,
+		"calibration" : 300,
+		"default_policy" : "SCHED_OTHER",
+		"pi_enabled" : false,
+		"lock_pages" : false,
+		"logdir" : "/data/local/tmp/",
+		"ftrace" : true,
+		"gnuplot" : false
+	}
+}

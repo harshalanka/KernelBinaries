@@ -1,0 +1,51 @@
+{
+	"tasks" : {
+		"CPULOAD" : {
+			"loop" : 10,
+			"instance" : 1,
+			"phases" : {
+				"C0" : {
+					"cpus" : [0],
+					"exec_time" : 5000
+					},
+				"C1" : {
+					"cpus" : [4],
+					"exec_time" : 5000
+					},
+				"C2" : {
+					"cpus" : [1],
+					"exec_time" : 5000
+					},
+				"C3" : {
+					"cpus" : [5],
+					"exec_time" : 5000
+					},
+				"C4" : {
+					"cpus" : [2],
+					"exec_time" : 5000
+					},
+				"C5" : {
+					"cpus" : [6],
+					"exec_time" : 5000
+					},
+				"C6" : {
+					"cpus" : [3],
+					"exec_time" : 5000
+					},
+				"C7" : {
+					"cpus" : [7],
+					"exec_time" : 5000
+				}
+			}
+		}
+	},
+	"global" : {
+		"duration" : -1,
+		"calibration" : 300,
+		"default_policy" : "SCHED_OTHER",
+		"pi_enabled" : false,
+		"ftrace" : false,
+		"mem_buffer_size" : 1073741824,
+		"gnuplot" : false
+	}
+}

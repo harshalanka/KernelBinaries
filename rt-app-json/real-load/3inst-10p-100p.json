@@ -1,0 +1,34 @@
+{
+	"tasks" : {
+		"colocstress1" : {
+			"loop" : -1,
+			"instance" : 2,
+			"sleep" : 18000,
+			"exec_time" : 2000
+		},
+		"colocstress2" : {
+			"loop" : -1,
+			"instance" : 1,
+			"phases" : {
+				"low" : {
+					"loop" : 100,
+					"sleep" : 18000,
+					"exec_time" : 2000,
+				},
+				"high" : {
+					"loop" : 100,
+					"exec_time" : 20000
+				}
+			}
+		}
+	},
+	"global" : {
+		"duration" : -1,
+		"default_policy" : "SCHED_OTHER",
+		"calibration" : 300,
+		"pi_enabled" : false,
+		"lock_pages" : false,
+		"ftrace" : false,
+		"gnuplot" : false
+	}
+}

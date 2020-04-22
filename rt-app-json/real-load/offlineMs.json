@@ -1,0 +1,19 @@
+{
+        "tasks" : {
+			"T0" : {
+				"loop" : 1,
+				"instance" : 8,
+				"exec_time" : 40000
+			}
+		},
+		"global" : {
+			"duration" : -1,
+			"calibration" : 300,
+			"default_policy" : "SCHED_OTHER",
+			"pi_enabled" : false,
+			"lock_pages" : false,
+			"logdir" : "/data/local/tmp/",
+			"ftrace" : false,
+			"gnuplot" : false
+    }
+}
